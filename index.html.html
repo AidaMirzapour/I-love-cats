@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Store🐾</title>
+  
+    <style>
+      body{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+      }
+
+      h2{
+        font-weight: 550;
+      }
+
+      img{
+        width: 500px;
+        max-width: 200;
+        border: 2px solid #9883E8;
+        box-shadow: 5px 5px 5px #B3AFDB;
+      }
+
+      hr{
+        color: #9883E8;
+        border-style:dashed
+      }      
+      
+      span{
+        font-size: 20px;
+        text-shadow: 2px 2px 6px rgba(39, 1, 41, 0.767);
+      }
+
+      a{
+        color: #7c6cb8;
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration:underline;
+        text-decoration-color: rgba(28, 1, 34, 0.801);
+      }
+
+      button{
+        font-size: 15px;
+        background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+        color: black;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 30px;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.137);
+      }
+      button:hover{
+        background: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+        color: white;
+        cursor: pointer;
+        border: 2px #B4B0DC;
+      }
+
+      .all{
+      background: linear-gradient(109.6deg, rgb(177, 173, 219) 11.2%, rgb(245, 226, 226) 91.1%);
+      border-radius: 10px;
+      width: 60%;
+      padding: 10px 30px 20px 30px;
+      margin: 0 auto;
+      }
+
+      .text_1 , .text_2 , .text_3{
+        width: 300px;
+        height: 100px;
+        float: left;
+        padding: 0 5px;
+      }
+      .clearfix{
+        clear: both;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="all">
+
+    <h1>I 💜 Cats</h1>
+    
+    <h2>Giving cats the lives they deserve!</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/522/original/b371efde-805b-44f8-96a7-90145cfd1c91.jpg?1663567665"
+      alt="Cat"     
+    />
+    <hr>
+
+    <p>
+      <div class="text_1">
+        <span>We</span> ensure second chances to pets at our sanctuary and lifesaving centers, even as we expand programs nationwide that keep animals out of shelters in the first place.
+      </div>
+      <div class="text_2">
+            <span>We</span> work to save more lives faster by providing shelters and rescue groups with ways to collaborate and connect so they can increase the number of animals they can rehome in their communities.
+      </div>
+      <div class="text_3">
+           <span>We</span>'re right there with you as you make a better future for homeless cats and dogs, giving you the support you need to care for your pets and the pets and people in your community.
+      </div>
+      <div class="clearfix"></div>
+      <br> 
+      <br>
+      <em>
+      also you can lern more <a href="https://www.thesprucepets.com/things-to-know-before-getting-a-cat-555305" target="_blank">here</a>
+      </em>
+    </p>
+
+    <hr>
+
+    <button><strong> Join Us🐾</strong></button>
+  </div>
+
+  <script>
+    function user(){
+      let name = prompt("What is your name?");
+      let email = prompt("Please enter your email address.");
+          
+      if( name === "" || email === "" || name === null || email === null){
+      alert("please fill all the blanks!");
+      } else{      
+      alert("We will be in touch " + name + " 😸")
+      }
+      console.log(name);
+      console.log(email);
+    }
+    let Button = document.querySelector("button");
+    Button.addEventListener("click", user);    
+  </script>
+
+  </body>
+</html>
